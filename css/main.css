@@ -3,7 +3,9 @@
 :root{
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
-    --pink: #e5345b;
+    --pink: #e6d11c;
+    --black:#000;
+   
 }
 body{
     font-family: var(--sm-font);
@@ -13,6 +15,7 @@ body{
 .bg-primary{
     background-color: var(--pink)!important;
 }
+
 
 .btn:not(.nav-btns button){
     background-color: #fff;
@@ -26,6 +29,7 @@ body{
     color: #fff;
     border-color: var(--pink);
 }
+
 
 /* text color */
 .text-primary{
@@ -50,11 +54,15 @@ body{
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
+.searchbar{
+    width: min-content;
+}
 
 /* header */
 #header{
     background: url(../images/banner-img-1.jpg) top/cover no-repeat;
 }
+
 .carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font);
@@ -83,7 +91,7 @@ body{
 /* collection */
 .active-filter-btn{
     background-color: var(--pink)!important;
-    color: #fff!important;
+    color: #030303!important;
     border-color: var(--pink)!important;
 }
 .filter-button-group .btn:hover{
@@ -109,6 +117,17 @@ body{
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+.shrink-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.shrink-img:hover img{
+    -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+            transform: scale(.9);
+
 }
 .special-img:hover img{
     -webkit-transform: scale(1.2);
@@ -182,4 +201,137 @@ footer a:hover{
     .nav-item{
         border-bottom: none;
     }
+}
+
+
+
+.products-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(218, 218, 218, 0.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+   transition:0ms ease-in-out 300ms;
+}
+
+.products-preview .preview{
+    
+   display: none;
+   
+   text-align: center;
+   background: #fff;
+   text-size-adjust: 20%;
+   width: 30rem;
+ 
+  
+}
+ .products-preview .preview.active{
+    display: inline-block;
+    transition:300ms ease-in-out;
+
+ }
+ 
+ .products-preview .preview img{
+    height: 16rem;
+    object-fit: contain;
+ }
+ .products-preview .preview .fa-times:hover{
+    color: var(--pink)!important;
+    transform: rotate(90deg);
+
+ }
+ 
+ .container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    float: left;
+    display: none; /* Hidden by default */
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .butn {
+    background-color: #ffffff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: .5px solid rgb(85, 85, 85);
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .butn:hover {
+    background-color: #e6d11c;
+    color: white;
+    border:none;
+  }
+  
+  /* Add a dark background to the active button */
+  .butn.hactive {
+    background-color: #e6d11c;
+    color: rgb(255, 253, 253);
+    border:none;
+  }
+ .popup{
+    position: fixed;
+    transition:top 0ms ease-in-out 300ms;
+    width: 100%;
+    height: 100%;
+ }
+ .popup .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity:0;
+    transition: opacity 100ms ease-in-out 200ms;
+ }
+ .popup .popup-content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(1.15);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    width: 30rem;
+ }
+ .popup .popup-content img{
+    height: 16rem;
+    object-fit: contain;
+    align-items: center;
+ }
+ .popup.active {
+    top: 0px;
+    transition:top 0ms ease-in-out 0ms;
+
+ }
+ .popup .active .overlay{
+    opacity:1;
+    transition: all 300ms ease-in-out;
+
+ }
+ .popup.active .popup-content{
+    transform:translate(-50%,-50%) scale(1);
+    opacity:1;
+ }
+ #popclose.btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+.products-preview .preview .centrals .closure.btn:hover{
+    background-color: #000;
+    border-color: #000;
+
 }
