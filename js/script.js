@@ -1,5 +1,7 @@
 
 
+//product-view
+
 let preveiwContainer = document.querySelector('.products-preview');
 let previewBox = preveiwContainer.querySelectorAll('.preview');
 
@@ -10,7 +12,7 @@ document.querySelectorAll('.products-container .product').forEach(product =>{
     previewBox.forEach(preview =>{
       let target = preview.getAttribute('data-target');
       if(name == target){
-        preview.classList.add('active');
+        preview.classList.add('kactive');
       }
     });
   };
@@ -18,7 +20,7 @@ document.querySelectorAll('.products-container .product').forEach(product =>{
 
 previewBox.forEach(close =>{
   close.querySelector('.close').onclick = () =>{
-    close.classList.remove('active');
+    close.classList.remove('kactive');
     preveiwContainer.style.display = 'none';
   };
   
