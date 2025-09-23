@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOAZON</title>
+    <title>GOOAZON</title>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap css -->
@@ -19,7 +19,7 @@
     <nav class = "navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
         <div class = "container">
             <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
-                                <h2 class = "position-relative d-inline-block text-uppercase fw-bold">OOAZON</h2>
+                                <h2 class = "position-relative d-inline-block text-uppercase fw-bold">GOOAZON</h2>
             </a>
 
             <button class = "navbar-toggler " type = "button" data-bs-toggle = "collapse" 
@@ -35,7 +35,7 @@
                         <a class = "nav-link text-uppercase text-dark " href = "#header">home</a>
                     </li>
                     <li class = "nav-item active px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "#catagory">catagory</a>
+                        <a class = "nav-link text-uppercase text-dark" href = "#catagory">gadgets</a>
                     </li>
                                     <li class = "nav-item active px-2 py-2 border-0">
                         <a class = "nav-link text-uppercase text-dark" href = "#about">aboutus</a>
@@ -60,16 +60,16 @@
     <section id = "catagory" class = "py-5">
         <div class = "container">
             <div class = "title text-center">
-                <h2 class = "position-relative d-inline-block text-uppercase fw-bold">catagory</h2>
+                <h2 class = "position-relative d-inline-block text-uppercase fw-bold">Gadgets</h2>
             </div>
 
             <div class = "row g-0">
                 <div class = "d-flex flex-wrap justify-content-center mt-5" id="myBtnContainer">
                     <button type = "button" class = "m-2 butn hactive" onclick="filterSelection('all')">New</button>
-                    <button type = "button" class = "m-2 butn" onclick="filterSelection('dec')">Decor</button>
+                    <button type = "button" class = "m-2 butn" onclick="filterSelection('dec')">Tech</button>
                     <button type = "button" class = "m-2 butn" onclick="filterSelection('hea')">Health</button>
-                    <button type = "button" class = "m-2 butn" onclick="filterSelection('gad')">Gadgets</button>
-                    <button type = "button" class = "m-2 butn" onclick="filterSelection('dea')">Deals</button>
+                    <button type = "button" class = "m-2 butn" onclick="filterSelection('gad')">Home</button>
+                    
                 </div>
                 <input type="text" class="form-control mt-3 mx-auto" id="myinput" onkeyup="search()" placeholder="Search" style="width:30%;">
                 <div class = "collection-list mt-4 row gx-0 gy-3 ">
@@ -77,18 +77,122 @@
 <div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
                         <a ><div class = "collection-img position-relative "data-name="p-1">
                             <img src="images/amzon.png" alt="Small Image" class="small-img">
-                            <img src = "images/floormop.jpg" class = "w-100" >
+                            <img src = "images/dumbbell.jpg" class = "w-100" >
                             <span class = "position-absolute bg-primary text-white d-flex align-items-center
-                             justify-content-center">53%</span>
+                             justify-content-center">60%</span>
                         </div></a>
                         <div class = "text-center">
-                            <p class = "text-capitalize my-1">Floor Mop</p>
-                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >1499₹</p>
- 			    <span class = "fw-bold px-2">699₹</span>
+                            <p class = "text-capitalize my-1">Dumbbells (kg)</p>
+                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >999₹</p>
+ 			    <span class = "fw-bold px-2">399₹</span>
                 <button type = "button" class = "butn" 
-                onclick="window.location.href='https://amzn.to/3VXzvh2'" >Get Link</button>
+                onclick="window.location.href='https://www.amazon.in/Lifelong-Dumbbells-Equipment-Exercise-Warranty/dp/B09W5PSTBP/ref=zg_bs_c_sports_d_sccl_2/258-6521318-4423832?pd_rd_w=GBVVG&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=PN0QFYG0BNDX4VD3SN18&pd_rd_wg=cd3JP&pd_rd_r=1059036a-1902-4903-ba81-1025221a07b1&pd_rd_i=B09W5PSTBP&th=1'" >Get Link</button>
                         </div>
                     </div>
+
+
+<div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
+                        <a ><div class = "collection-img position-relative "data-name="p-1">
+                            <img src="images/amzon.png" alt="Small Image" class="small-img">
+                            <img src = "images/Juice blender.JPG" class = "w-100" >
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center
+                             justify-content-center">83%</span>
+                        </div></a>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Skate Scooter</p>
+                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >3999₹</p>
+ 			    <span class = "fw-bold px-2">679₹</span>
+                <button type = "button" class = "butn" 
+                onclick="window.location.href='https://www.amazon.in/Lifelong-Adjustable-Weight-50-Manufacturers-LLKS03/dp/B0C862R9VF/ref=zg_bs_c_sports_d_sccl_1/258-6521318-4423832?pd_rd_w=GBVVG&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=PN0QFYG0BNDX4VD3SN18&pd_rd_wg=cd3JP&pd_rd_r=1059036a-1902-4903-ba81-1025221a07b1&pd_rd_i=B0C862R9VF&th=1'" >Get Link</button>
+                        </div>
+                    </div>
+
+
+                    <div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
+                        <a ><div class = "collection-img position-relative "data-name="p-1">
+                            <img src="images/amzon.png" alt="Small Image" class="small-img">
+                            <img src = "images/Juice blender.JPG" class = "w-100" >
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center
+                             justify-content-center">82%</span>
+                        </div></a>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Safari Backpack</p>
+                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >3396₹</p>
+ 			    <span class = "fw-bold px-2">599₹</span>
+                <button type = "button" class = "butn" 
+                onclick="window.location.href='https://www.amazon.in/Safari-Spacious-Compartment-Backpack-Raincover/dp/B097LC1DJ6/ref=zg_bs_c_computers_d_sccl_1/258-6521318-4423832?pd_rd_w=D8Sge&content-id=amzn1.sym.b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_p=b908f532-cbe7-4274-8b24-b671acc58bd2&pf_rd_r=PN0QFYG0BNDX4VD3SN18&pd_rd_wg=cd3JP&pd_rd_r=1059036a-1902-4903-ba81-1025221a07b1&pd_rd_i=B097LC1DJ6&th=1'" >Get Link</button>
+                        </div>
+                    </div>
+
+<div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
+                        <a ><div class = "collection-img position-relative "data-name="p-1">
+                            <img src="images/amzon.png" alt="Small Image" class="small-img">
+                            <img src = "images/Juice blender.JPG" class = "w-100" >
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center
+                             justify-content-center">67%</span>
+                        </div></a>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Juice Blender</p>
+                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >1999₹</p>
+ 			    <span class = "fw-bold px-2">664₹</span>
+                <button type = "button" class = "butn" 
+                onclick="window.location.href='https://amzn.to/4nsHTRY'" >Get Link</button>
+                        </div>
+                    </div>
+
+					
+
+<div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
+                        <a ><div class = "collection-img position-relative "data-name="p-1">
+                            <img src="images/amzon.png" alt="Small Image" class="small-img">
+                            <img src = "images/Adhesive shelf.jpg" class = "w-100" >
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center
+                             justify-content-center">63%</span>
+                        </div></a>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Adhesive Shelf</p>
+                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >755₹</p>
+ 			    <span class = "fw-bold px-2">279₹</span>
+                <button type = "button" class = "butn" 
+                onclick="window.location.href='https://amzn.to/46vW0OZ'" >Get Link</button>
+                        </div>
+                    </div>
+
+
+					
+<div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
+                        <a ><div class = "collection-img position-relative "data-name="p-1">
+                            <img src="images/amzon.png" alt="Small Image" class="small-img">
+                            <img src = "images/Adhesive hook.jpg" class = "w-100" >
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center
+                             justify-content-center">82%</span>
+                        </div></a>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Adhesive Hooks</p>
+                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >1299₹</p>
+ 			    <span class = "fw-bold px-2">229₹</span>
+                <button type = "button" class = "butn" 
+                onclick="window.location.href='https://amzn.to/46ll6Bt'" >Get Link</button>
+                        </div>
+                    </div>
+
+					
+					<div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
+                        <a ><div class = "collection-img position-relative "data-name="p-1">
+                            <img src="images/amzon.png" alt="Small Image" class="small-img">
+                            <img src = "images/Door strip.jpg" class = "w-100" >
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center
+                             justify-content-center">74%</span>
+                        </div></a>
+                        <div class = "text-center">
+                            <p class = "text-capitalize my-1">Door Strip</p>
+                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" >699₹</p>
+ 			    <span class = "fw-bold px-2">179₹</span>
+                <button type = "button" class = "butn" 
+                onclick="window.location.href='https://amzn.to/48tI1f9'" >Get Link</button>
+                        </div>
+                    </div>
+
 
 <div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  dec gad target"id="">
                         <a ><div class = "collection-img position-relative "data-name="p-1">
@@ -121,19 +225,7 @@
                         </div>
                     </div>
 
-                    <div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv hea target"id="">
-                        <a ><div class = "collection-img position-relative "data-name="p-1">
-                            <img src="images/amzon.png" alt="Small Image" class="small-img">
-                            <img src = "images/dumbbell.jpg" class = "w-100" >
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">35%</span>
-                        </div></a>
-                        <div class = "text-center">
-                            <p class = "text-capitalize my-1">2kg Dumbbells</p>
-                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" > 400₹</p>
- 			    <span class = "fw-bold px-2">259₹</span>
-                <button type = "button" class = "butn" onclick="window.location.href='https://amzn.to/4nAtpiv'" >Get Link</button>
-                        </div>
-                    </div>
+                  
 		<div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv hea gad target"id="">
                         <a ><div class = "collection-img position-relative "data-name="p-1">
                             <img src="images/amzon.png" alt="Small Image" class="small-img">
@@ -160,19 +252,7 @@
                 <button type = "button" class = "butn" onclick="window.location.href='https://amzn.to/3K1D03w'" >Get Link</button>
                         </div>
                     </div>
-                    <div class = "colt col-sm-4 col-md-6 col-lg-4 col-xl-3 p-2 filterDiv  gad target"id="">
-                        <a ><div class = "collection-img position-relative "data-name="p-1">
-                            <img src="images/amzon.png" alt="Small Image" class="small-img">
-                            <img src = "images/fox mouse.jpg" class = "w-100" >
-                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">73%</span>
-                        </div></a>
-                        <div class = "text-center">
-                            <p class = "text-capitalize my-1">Arctic Fox Mouse</p>
-                            <p class="p-0 mb-1 m-0" style="text-decoration:line-through;" > 1999₹</p>
- 			    <span class = "fw-bold px-2"> 549₹</span>
-                <button type = "button" class = "butn" onclick="window.location.href='https://amzn.to/41ZwvEv'" >Get Link</button>
-                        </div>
-                    </div>
+                 
 
                
 </div>
@@ -288,7 +368,7 @@
                     <p>We are online affiliate partner of amazon india.We proide best quality products at discounted rate early as possible for our customers.You can explore newest design's and product in market early.Hope our customer's getting best product at best price possible. HAPPY SHOPPING!!!</p>
                 </div>
                 <div class = "col-lg-6 order-lg-0">
-                    <img src = "images/OOAZONpure.png" alt = "" class = "img-fluid">
+                    <img src = "images/Gooazon.PNG" alt = "" class = "img-fluid">
                 </div>
             </div>
         </div>
@@ -305,7 +385,7 @@
         <div class = "container">
             <div class = "row  g-4">
                 <div class = "col-md-6 col-lg-3">
-                    <a class = "fw-bold text-uppercase text-decoration-none  text-black" href = "index.html">OOAZON</a>
+                    <a class = "fw-bold text-uppercase text-decoration-none  text-black" href = "index.html">GOOAZON</a>
                     <p class = "text-white text-muted mt-3">An amazon partnered Brand</p>
                 </div>
 
@@ -319,7 +399,7 @@
                         </li>
                         <li class = "my-3">
                             <a href = "#" class = "text-white text-decoration-none text-muted">
-                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                                <i class = "fas fa-chevron-right me-1"></i> Gadgets
                             </a>
                         </li>
                         <li class = "my-3">
